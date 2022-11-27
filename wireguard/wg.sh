@@ -112,9 +112,9 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O addwg "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/wireguard/addwg.sh"
-wget -O delwg "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/wireguard/delwg.sh"
-wget -O renewwg "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/wireguard/renewwg.sh"
+wget -O addwg "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/wireguard/addwg.sh"
+wget -O delwg "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/wireguard/delwg.sh"
+wget -O renewwg "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/wireguard/renewwg.sh"
 chmod +x addwg
 chmod +x delwg
 chmod +x renewwg
