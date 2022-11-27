@@ -19,25 +19,25 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssh"
+akbarvpn="raw.githubusercontent.com/dindafriska/aioinstaller/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/sstp"
+akbarvpnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/fisabiliyusri/Mantap/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/dindafriska/aioinstaller/main/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
