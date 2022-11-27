@@ -1,5 +1,6 @@
 #!/bin/bash
 # Mod By SL
+# Recode By DOBOLite
 # =====================================================
 
 # Color
@@ -51,10 +52,11 @@ mkdir -p /var/log/xray/
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
 wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-bash acme.sh --install
+# bash acme.sh --install
+bash acme.sh --install --set-default-ca --server letsencrypt
 rm acme.sh
 cd .acme.sh
-bash acme.sh --register-account -m senowahyu62@gmail.com
+bash acme.sh --register-account -m jonidevelopmentmail@gmail.com
 bash acme.sh --issue --standalone -d $domain --force
 bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
 
@@ -107,7 +109,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess/",
+          "path": "/vmess",
           "headers": {
             "Host": ""
           }
@@ -116,7 +118,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 80,
+      "port": 801,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -136,7 +138,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess/",
+          "path": "/vmess",
           "headers": {
             "Host": ""
           }
@@ -178,7 +180,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless/",
+          "path": "/vless",
           "headers": {
             "Host": ""
           }
@@ -195,7 +197,7 @@ cat > /etc/xray/config.json << END
       }
     },
     {
-      "port": 80,
+      "port": 801,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -214,7 +216,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless/",
+          "path": "/vless",
           "headers": {
             "Host": ""
           }
@@ -241,7 +243,7 @@ cat > /etc/xray/config.json << END
         ],
         "fallbacks": [
           {
-            "dest": 80
+            "dest": 801
           }
         ]
       },
@@ -365,8 +367,8 @@ END
 # Accept port Xray
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 801 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 801 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2083 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2083 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
@@ -461,7 +463,7 @@ END
 # Installing Trojan Go Service
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
-Description=Trojan-Go Service Mod By SL
+Description=Trojan-Go Service Mod By DOBOLite
 Documentation=nekopoi.care
 After=network.target nss-lookup.target
 
