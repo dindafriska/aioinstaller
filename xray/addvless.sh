@@ -1,5 +1,5 @@
 #!/bin/bash
-# DOBOLite
+# SL
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -12,6 +12,8 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
+tls_special=443
+nontls_special=80
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$( curl ipinfo.io/ip | grep $MYIP )
@@ -49,27 +51,57 @@ sed -i '/#xray-vless-tls$/a\#### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#xray-vless-nontls$/a\#### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-xrayvless1="vless://${uuid}@${domain}:$tls?path=/vless/&security=tls&encryption=none&type=ws#${user}"
-xrayvless2="vless://${uuid}@${domain}:$nontls?path=/vless/&encryption=none&type=ws#${user}"
+xrayvless1="vless://${uuid}@${domain}:$tls_special?path=/worryfree&security=tls&encryption=none&type=ws#${user}"
+xrayvless2="vless://${uuid}@${domain}:$nontls_special?path=/worryfree&encryption=none&type=ws#${user}"
 systemctl restart xray.service
 service cron restart
 clear
 echo -e ""
-echo -e "======-XRAYS/VLESS-======"
-echo -e "Remarks     : ${user}"
-echo -e "IP/Host     : ${MYIP}"
-echo -e "Address     : ${domain}"
-echo -e "Port TLS    : $tls"
-echo -e "Port No TLS : $nontls"
-echo -e "User ID     : ${uuid}"
-echo -e "Encryption  : none"
-echo -e "Network     : ws"
-echo -e "Path        : /vless/"
-echo -e "Created     : $hariini"
-echo -e "Expired     : $exp"
-echo -e "========================="
-echo -e "Link TLS    : ${xrayvless1}"
-echo -e "========================="
-echo -e "Link No TLS : ${xrayvless2}"
-echo -e "========================="
-echo -e "Script Mod By DOBOLite"
+echo -e "*******-VLESS MULTIPATH/CUSTOM METHOD-*******"
+echo -e "Remarks                  : ${user}"
+echo -e "IP/Host                  : ${MYIP} - isi_bug_host (gw.ruangguru.com)"
+echo -e "Address                  : ${domain}"
+#echo -e "Port TLS         : ${tls}"
+#echo -e "Port No TLS        : ${nontls}"
+echo -e "Port TLS                 : ${tls_special}"
+echo -e "Port No TLS              : ${nontls_special}"
+echo -e "User ID                  : ${uuid}"
+echo -e "Alter ID                 : 0"
+echo -e "Encryption  			  : none"
+echo -e "TLS Security             : auto"
+echo -e "NON TLS Security         : none"
+echo -e "Network                  : ws"
+#echo -e "Path        : /vmess"
+echo -e "Path                     : /worryfree - /terserah"
+echo -e "Custom Method Path       : CF-RAY:http://gw.ruangguru.com/ - terserah"
+echo -e "SNI                      : gw.ruangguru.com - terserah"
+echo -e "Created                  : $hariini"
+echo -e "Expired                  : $exp"
+echo -e "=================================================="
+echo -e "Link TLS"
+echo -e "${xrayvless1}"
+echo -e "=================================================="
+echo -e "Link Non TLS "
+echo -e "${xrayvless2}"
+echo -e "=================================================="
+echo -e "**************-BY DOBO Lite-**************"
+
+# echo -e ""
+# echo -e "======-XRAYS/VLESS-======"
+# echo -e "Remarks     : ${user}"
+# echo -e "IP/Host     : ${MYIP}"
+# echo -e "Address     : ${domain}"
+# echo -e "Port TLS    : $tls"
+# echo -e "Port No TLS : $nontls"
+# echo -e "User ID     : ${uuid}"
+# echo -e "Encryption  : none"
+# echo -e "Network     : ws"
+# echo -e "Path        : /worryfree/"
+# echo -e "Created     : $hariini"
+# echo -e "Expired     : $exp"
+# echo -e "========================="
+# echo -e "Link TLS    : ${xrayvless1}"
+# echo -e "========================="
+# echo -e "Link No TLS : ${xrayvless2}"
+# echo -e "========================="
+# echo -e "DOBOLITE"

@@ -279,13 +279,13 @@ reboot
 
 • OpenSSH                   : 22, 2253
 
-• Dropbear                  : 443, 109, 143, 1153
+• Dropbear                  : 442, 109, 143, 1153
 
-• Stunnel5                  : 443, 445, 777
+• Stunnel5                  : 442, 445, 777
 
 • OpenVPN                   : TCP 1194, UDP 2200, SSL 990
 
-• Websocket SSH TLS         : 443
+• Websocket SSH TLS         : 442
 
 • Websocket SSH HTTP        : 8880
 
@@ -311,15 +311,17 @@ reboot
 
 • SS-OBFS HTTP              : 3443-3543
 
-• XRAYS Vmess TLS           : 8443
+• XRAYS Vmess TLS           : 443
 
 • XRAYS Vmess None TLS      : 80
 
-• XRAYS Vless TLS           : 8443
+• XRAYS Vless TLS           : 443
 
 • XRAYS Vless None TLS      : 80
 
-• XRAYS Trojan              : 2083
+• XRAYS Trojan TLS           : 443
+
+• XRAYS Trojan None TLS      : 80
 
 • XRAYS Vmess GRPC TLS      : 1180,3380
 
