@@ -1,6 +1,6 @@
 #!/bin/bash
 # Proxy For Edukasi & Imclass
-# SL
+# DOBOLite
 # ==========================================
 
 # Link Hosting Kalian

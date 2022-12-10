@@ -1,6 +1,6 @@
 #!/bin/bash
 # XRay Installation
-# SL Script
+# DOBOLite Script
 # ==================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear

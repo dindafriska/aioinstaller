@@ -1,4 +1,4 @@
-# SLDNS
+# DOBOLiteDNS
 SSH OVER DNS create by SL
 * Link Script Repo SlowDNS dari Sulaiman L
 ```html
