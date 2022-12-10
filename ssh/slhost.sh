@@ -35,7 +35,7 @@ mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 clear;
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m              ⇱ Sytem Information ⇲             \E[0m"
+echo -e "\E[44;1;39m             ⇱ DOMAIN CHANGE ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo "";
 read -p "Masukkan Domain Utama (Cth : google.com) : " DOMAIN

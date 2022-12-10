@@ -271,34 +271,6 @@ cat > /etc/xray/config.json << END
         "grpcSettings": {}
       },
       "domain": "$domain"
-     },{
-      "port": 801,
-      "protocol": "trojan",
-      "settings": {
-        "clients": [
-          {
-            "password": "${uuid8}"
-#xray-trojan
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "tlsSettings": {},
-        "tcpSettings": {},
-        "kcpSettings": {},
-        "wsSettings": {
-          "path": "/xrays",
-          "headers": {
-            "Host": ""
-          }
-        },
-        "httpSettings": {},
-        "quicSettings": {},
-        "grpcSettings": {}
-      },
-      "domain": "$domain"
      },
     {
       "port": 2083,
