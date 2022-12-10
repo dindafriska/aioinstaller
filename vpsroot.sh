@@ -4,7 +4,8 @@
 wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/dindafriska/aioinstaller/main/sshd_config;
 systemctl restart sshd;
 clear;
-read -e "Masukkan Password VPS Anda: ";
+#echo -e "Masukkan Password:";
+read -sp "Masukkan Password : "pwe;
 usermod -p `perl -e "print crypt("$pwe","Q4")"` root;
 clear;
 printf "Mohon Simpan Informasi Akun VPS Ini
