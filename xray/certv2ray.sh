@@ -25,6 +25,7 @@ wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master
 bash acme.sh --install --set-default-ca --server letsencrypt
 #rm acme.sh
 #cd .acme.sh
+clear;
 echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
 echo "modified by dobo lite"
 bash acme.sh --register-account -m jonidevelopmentmail@gmail.com
