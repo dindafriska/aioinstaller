@@ -119,7 +119,7 @@ menuinfo
 ;;
 21)
 clear
-ins-xray-core
+ins-xray-custom
 # ;;
 # 22)
 # clear
