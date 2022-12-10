@@ -24,7 +24,7 @@ rm -rf setmenu
 rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
-
+rm -rf install-xray-custom
 
 rm -rf menu
 rm -rf menuinfo
