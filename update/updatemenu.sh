@@ -24,7 +24,7 @@ rm -rf setmenu
 rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
-rm -rf install-xray-custom
+rm -rf ins-xray-custom
 
 rm -rf menu
 rm -rf menuinfo
@@ -61,7 +61,7 @@ wget -O slhost "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/
 wget -O sl-download-info "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/update/menuinfo.sh"
 wget -O install-ss-plugin "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/shadowsocks-plugin/install-ss-plugin.sh"
-wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/xray/ins-xray-core.sh"
+wget -O ins-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/xray/ins-xray-core.sh"
 
 chmod +x install-ss-plugin
 chmod +x xray-grpc
@@ -95,7 +95,7 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
-chmod +x install-xray-custom
+chmod +x ins-xray-custom
 sl-download-info
 #install-sldns
 #install-ss-plugin
