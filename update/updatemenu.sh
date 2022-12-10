@@ -2,6 +2,8 @@
 # ==========================================
 # Color
 # hapus menu
+# download menu
+cd /usr/bin
 rm -rf menu
 rm -rf ipsaya
 rm -rf sl-fix
@@ -23,8 +25,7 @@ rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
 
-# download menu
-cd /usr/bin
+
 rm -rf menu
 rm -rf menuinfo
 rm -rf restart
