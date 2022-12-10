@@ -119,7 +119,7 @@ menuinfo
 ;;
 21)
 clear
-ins-xray-custom
+install-xray-custom
 # ;;
 # 22)
 # clear
