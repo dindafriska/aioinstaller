@@ -28,6 +28,7 @@ rm -rf /root/nsdomain
 rm -rf /var/lib/crot/ipvps.conf
 rm nsdomain
 rm domain
+rm slhost.sh
 mkdir -p /usr/bin/xray
 mkdir -p /usr/bin/v2ray
 mkdir -p /etc/xray
