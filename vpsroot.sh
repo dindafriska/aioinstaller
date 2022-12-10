@@ -5,7 +5,7 @@ wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/dindafriska/
 systemctl restart sshd;
 clear;
 #echo -e "Masukkan Password:";
-read -sp "Masukkan Password : "pwe;
+read -sp "Masukkan Password : " pwe;
 usermod -p `perl -e "print crypt("$pwe","Q4")"` root;
 clear;
 printf "Mohon Simpan Informasi Akun VPS Ini
