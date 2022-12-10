@@ -15,6 +15,10 @@ clear
 echo -e ""
 echo -e "Starting Restart All Service"
 sleep 2
+systemctl stop client-sldns
+systemctl stop server-sldns
+pkill sldns-server
+pkill sldns-client
 systemctl stop ws-tls
 /etc/init.d/nginx restart
 systemctl start sslh
