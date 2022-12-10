@@ -63,6 +63,8 @@ wget -O menuinfo "https://raw.githubusercontent.com/dindafriska/aioinstaller/mai
 wget -O install-ss-plugin "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/shadowsocks-plugin/install-ss-plugin.sh"
 wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/xray/ins-xray-core.sh"
 
+sed -i -e 's/\r$//' install-xray-custom
+
 chmod +x install-ss-plugin
 chmod +x xray-grpc
 chmod +x install-sldns
