@@ -42,7 +42,7 @@ chmod +x /usr/local/bin/ws-ovpn
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
 Description=Python Proxy Mod By LamVpn
-Documentation=https://nekopoi.care
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]
@@ -70,7 +70,7 @@ chmod +x /usr/local/bin/ws-tls
 cat > /etc/systemd/system/ws-tls.service << END
 [Unit]
 Description=Python Proxy Mod By geovpn
-Documentation=https://nekopoi.care
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]

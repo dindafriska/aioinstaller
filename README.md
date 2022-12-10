@@ -3,7 +3,7 @@
 <h2 align="center">
 Auto Script Install All VPN Service
 Recode By DOBO-Lite
-Mod By SL
+Mod By DOBOLite
 <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg"></h2>
 
 </p> 

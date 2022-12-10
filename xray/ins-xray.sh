@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By SL
+# Mod By DOBOLite
 # Recode By DOBOLite
 # =====================================================
 
@@ -68,6 +68,8 @@ uuid3=$(cat /proc/sys/kernel/random/uuid)
 uuid4=$(cat /proc/sys/kernel/random/uuid)
 uuid5=$(cat /proc/sys/kernel/random/uuid)
 uuid6=$(cat /proc/sys/kernel/random/uuid)
+uuid7=$(cat /proc/sys/kernel/random/uuid)
+uuid8=$(cat /proc/sys/kernel/random/uuid)
 
 # // Certificate File
 path_crt="/etc/xray/xray.crt"
@@ -109,7 +111,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess",
+          "path": "/xrays",
           "headers": {
             "Host": ""
           }
@@ -138,7 +140,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vmess",
+          "path": "/xrays",
           "headers": {
             "Host": ""
           }
@@ -180,7 +182,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless",
+          "path": "/xrays",
           "headers": {
             "Host": ""
           }
@@ -216,7 +218,7 @@ cat > /etc/xray/config.json << END
         "kcpSettings": {},
         "httpSettings": {},
         "wsSettings": {
-          "path": "/vless",
+          "path": "/xrays",
           "headers": {
             "Host": ""
           }
@@ -231,6 +233,73 @@ cat > /etc/xray/config.json << END
         ]
       }
     },
+    {
+      "port": 8443,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "${uuid7}"
+#xray-trojan
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "${path_crt}",
+              "keyFile": "${path_key}"
+            }
+          ],
+          "alpn": [
+            "http/1.1"
+          ]
+        },
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {
+          "path": "/xrays",
+          "headers": {
+            "Host": ""
+          }
+        },
+        "httpSettings": {},
+        "quicSettings": {},
+        "grpcSettings": {}
+      },
+      "domain": "$domain"
+     },{
+      "port": 801,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "${uuid8}"
+#xray-trojan
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "tlsSettings": {},
+        "tcpSettings": {},
+        "kcpSettings": {},
+        "wsSettings": {
+          "path": "/xrays",
+          "headers": {
+            "Host": ""
+          }
+        },
+        "httpSettings": {},
+        "quicSettings": {},
+        "grpcSettings": {}
+      },
+      "domain": "$domain"
+     },
     {
       "port": 2083,
       "protocol": "trojan",
@@ -346,8 +415,8 @@ END
 # / / Installation Xray Service
 cat > /etc/systemd/system/xray.service << END
 [Unit]
-Description=Xray Service Mod By SL
-Documentation=https://nekopoi.care
+Description=Xray Service Mod By DOBOLite
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]
@@ -464,7 +533,7 @@ END
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
 Description=Trojan-Go Service Mod By DOBOLite
-Documentation=nekopoi.care
+Documentation=google.com
 After=network.target nss-lookup.target
 
 [Service]

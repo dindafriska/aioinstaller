@@ -83,6 +83,6 @@ echo "----------------------------------------------";
         cat /tmp/vpn-login-udp.txt
 fi
 echo "----------------------------------------------";
-echo "Script Mod By SL"
+echo "Script Mod By DOBOLite"
 echo "";
 

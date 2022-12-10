@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By SL
+# Mod By DOBOLite
 # =====================================================
 source /var/lib/crot/ipvps.conf
 if [[ "$IP" = "" ]]; then

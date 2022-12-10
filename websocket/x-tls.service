@@ -1,6 +1,6 @@
 [Unit]
 Description=Python Proxy by SL
-Documentation=https://nekopoi.care
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]

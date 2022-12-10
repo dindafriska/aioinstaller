@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod By SL
+# Mod By DOBOLite
 # =====================================================
 
 
@@ -81,7 +81,7 @@ END
 cat > /etc/systemd/system/xray@grpc.service << END
 [Unit]
 Description=Xray Vless GRPC Service
-Documentation=https://nekopoi.care
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]

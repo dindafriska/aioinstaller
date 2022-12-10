@@ -100,7 +100,7 @@ rm -f /root/install-ss-plugin.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=nekopoi.care
+Documentation=google.com
 
 [Service]
 Type=oneshot

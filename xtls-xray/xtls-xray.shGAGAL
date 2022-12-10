@@ -329,7 +329,7 @@ systemctl daemon-reload
 cat > /etc/systemd/system/xtls-xray.service << END
 [Unit]
 Description=XTLS Xray Service Create By SL
-Documentation=https://nekopoi.care
+Documentation=https://google.com
 After=network.target nss-lookup.target
 
 [Service]
