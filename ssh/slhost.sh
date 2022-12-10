@@ -20,7 +20,9 @@ clear;
 printf "       Mod By DOBOLite
 ============================================
           Domain Update
-============================================\n\n\n"
+============================================
+
+" 
 echo "";
 read -p "Masukkan Domain Utama (Cth : google.com) : " DOMAIN
 read -p "Masukkan Sub Domain (Cth : translate.google.com) : " SUB_DOMAIN
