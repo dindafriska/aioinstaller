@@ -18,6 +18,7 @@ source /var/lib/crot/ipvps.conf
 domain=$(cat /etc/xray/domain)
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
+rm acme.sh
 wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
 bash acme.sh --install --set-default-ca --server letsencrypt
 rm acme.sh
