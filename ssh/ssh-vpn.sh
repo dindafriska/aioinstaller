@@ -444,6 +444,10 @@ wget -O slowdnsmenu "https://raw.githubusercontent.com/dindafriska/aioinstaller/
 wget -O running "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/update/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/update/updatemenu.sh"
 wget -O sl-fix "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/sslh-fix/sl-fix"
+#install new core xray
+wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/xray/ins-xray-core.sh"
+
+sed -i -e 's/\r$//' install-xray-custom
 
 chmod +x sl-fix
 chmod +x ipsaya
@@ -464,6 +468,7 @@ chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
 chmod +x updatemenu
+chmod +x install-xray-custom
 
 
 chmod +x portsshnontls

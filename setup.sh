@@ -81,7 +81,7 @@ wget https://raw.githubusercontent.com/dindafriska/aioinstaller/main/SLDNS/insta
 # wget https://raw.githubusercontent.com/dindafriska/aioinstaller/main/grpc/xray-grpc.sh && chmod +x xray-grpc.sh && screen -S xray-grpc ./xray-grpc.sh
 # install shadowsocks plugin
 # wget https://raw.githubusercontent.com/dindafriska/aioinstaller/main/shadowsocks-plugin/install-ss-plugin.sh && chmod +x install-ss-plugin.sh && ./install-ss-plugin.sh
- 
+
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
