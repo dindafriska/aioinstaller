@@ -279,13 +279,13 @@ reboot
 
 • OpenSSH                   : 22, 2253
 
-• Dropbear                  : 442, 109, 143, 1153
+• Dropbear                  : 443, 109, 143, 1153
 
-• Stunnel5                  : 442, 445, 777
+• Stunnel5                  : 443, 445, 777
 
 • OpenVPN                   : TCP 1194, UDP 2200, SSL 990
 
-• Websocket SSH TLS         : 442
+• Websocket SSH TLS         : 443
 
 • Websocket SSH HTTP        : 8880
 
