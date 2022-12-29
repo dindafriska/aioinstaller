@@ -144,10 +144,10 @@ echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
 echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
 echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
-echo "   - XRAYS Vless TLS         : 443"  | tee -a log-install.txt
+echo "   - XRAYS Vless TLS         : 8443"  | tee -a log-install.txt
 echo "   - XRAYS Vless None TLS    : 80"  | tee -a log-install.txt
-echo "   - XRAYS Trojan TLS        : 443"  | tee -a log-install.txt
-echo "   - XRAYS Trojan None TLS   : 443"  | tee -a log-install.txt
+echo "   - XRAYS Trojan TLS        : 8443"  | tee -a log-install.txt
+echo "   - XRAYS Trojan None TLS   : 8443"  | tee -a log-install.txt
 echo "   - XRAYS VMESS GRPC        : 1180"  | tee -a log-install.txt
 echo "   - XRAYS VLESS GRPC        : 2280"  | tee -a log-install.txt
 echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
