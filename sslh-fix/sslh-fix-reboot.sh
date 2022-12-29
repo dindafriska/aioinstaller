@@ -1,7 +1,7 @@
 #!/bin/bash
 # ==========================================
 
-sleep 20
+sleep 10
 systemctl stop ws-tls 
 pkill python
 systemctl stop sslh
@@ -16,5 +16,5 @@ systemctl start sslh
 /etc/init.d/sslh restart 
 systemctl start ws-tls
 systemctl restart ws-tls
-sleep 20
+sleep 10
 restart
