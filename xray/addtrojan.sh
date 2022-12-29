@@ -12,7 +12,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-tls_special=443
+tls_special=8443
 nontls_special=80
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
