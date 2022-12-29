@@ -47,6 +47,7 @@ clear;
 # NS_DOMAIN=zerosl-${sub}.mantapxsl.my.id
 
 echo "$SUB_DOMAIN" >> /etc/v2ray/domain
+cp /etc/v2ray/domain /root/domain 
 #
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
