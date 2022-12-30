@@ -287,7 +287,7 @@ reboot
 
 • Websocket SSH TLS         : 443
 
-• Websocket SSH HTTP        : 8880
+• Websocket SSH HTTP        : 80
 
 • Websocket OpenVPN         : 2086
 
@@ -313,15 +313,15 @@ reboot
 
 • XRAYS Vmess TLS           : 443
 
-• XRAYS Vmess None TLS      : 80
+• XRAYS Vmess None TLS      : 801
 
-• XRAYS Vless TLS           : 443
+• XRAYS Vless TLS           : 8443
 
-• XRAYS Vless None TLS      : 80
+• XRAYS Vless None TLS      : 801
 
-• XRAYS Trojan TLS           : 443
+• XRAYS Trojan TLS           : 8443
 
-• XRAYS Trojan None TLS      : 80
+• XRAYS Trojan None TLS      : 801
 
 • XRAYS Vmess GRPC TLS      : 1180,3380
 

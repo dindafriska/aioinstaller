@@ -681,6 +681,10 @@ iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2096 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2096 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 80 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 801 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 801 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 802 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 802 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 443 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 2095 -j ACCEPT
