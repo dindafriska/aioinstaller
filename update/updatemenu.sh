@@ -24,6 +24,8 @@ rm -rf setmenu
 rm -rf slowdnsmenu
 rm -rf running
 rm -rf copyrepo
+rm -rf listtrgo
+rm -rf exptrgo
 rm -rf install-xray-custom
 
 rm -rf menu
@@ -62,6 +64,8 @@ wget -O sl-download-info "https://raw.githubusercontent.com/dindafriska/aioinsta
 wget -O menuinfo "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/update/menuinfo.sh"
 wget -O install-ss-plugin "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/shadowsocks-plugin/install-ss-plugin.sh"
 wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/xray/ins-xray-core.sh"
+wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/trojango/exptrgo.sh"
+wget -O install-xray-custom "https://raw.githubusercontent.com/dindafriska/aioinstaller/main/trojango/listtrgo.sh"
 
 sed -i -e 's/\r$//' install-xray-custom
 
@@ -93,6 +97,8 @@ chmod +x grpcmenu
 chmod +x grpcupdate
 chmod +x trmenu
 chmod +x trgomenu
+chmod +x listtrgo
+chmod +x exptrgo
 chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running

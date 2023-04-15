@@ -11,10 +11,12 @@ echo -e "$yy 1$y. Create Account Trojan Go"
 echo -e "$yy 2$y. Delete Account Trojan Go"
 echo -e "$yy 3$y. Extending Account Trojan Go Active Life"
 echo -e "$yy 4$y. Check User Login Trojan Go"
-echo -e "$yy 5$y. Menu"
-echo -e "$yy 6$y. Exit"
+echo -e "$yy 5$y. Check Current User Trojan Go"
+echo -e "$yy 6$y. Delete Expired User Trojan Go"
+echo -e "$yy 7$y. Menu"
+echo -e "$yy 8$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 6 ] : " menu
+read -p "Select From Options [ 1 - 8 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -30,10 +32,16 @@ renewtrgo
 cektrgo
 ;;
 5)
+listtrgo
+;;
+6)
+exptrgo
+;;
+7)
 clear
 menu
 ;;
-6)
+8)
 clear
 exit
 ;;
