@@ -13,10 +13,10 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl ipinfo.io/ip | grep $MYIP )
+#echo "Checking VPS"
+IZIN=$( curl -s ipinfo.io/ip | grep $MYIP )
 if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
+#echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Fuck You!!"
@@ -70,16 +70,16 @@ link="trojan-go://${user}@${domain}:${trgo}/?sni=${domain}&type=ws&host=${domain
 clear
 echo -e ""
 echo -e "=========INFO Trojan GO======="
-echo -e "IP/Host    : ${MYIP}"
-echo -e "Address    : ${domain}"
-echo -e "Port       : ${trgo}"
-echo -e "Key        : ${user}"
+echo -e "IP/Host    : <code>${MYIP}</code>"
+echo -e "Address    : <code>${domain}</code>"
+echo -e "Port       : <code>${trgo}</code>"
+echo -e "Key        : <code>${user}</code>"
 echo -e "Encryption : none"
-echo -e "Path       : /trojango"
+echo -e "Path       : <code>/trojango</code>"
 echo -e "Created    : $hariini"
 echo -e "Expired    : $exp 00:00"
 echo -e "=============================="
-echo -e "Link TrGo  : ${link}"
+echo -e "Link TrGo  : <code>${link}</code>"
 echo -e "=============================="
 echo -e "=============================="
 echo -e " Generated From Rania With Love"
